@@ -1,6 +1,7 @@
 
 
 <header class="navbar">
-  <a href="{% url 'home' %}"> Home</a>
-  <a href="{% url 'about' %}"> About</a>
+  <a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home'%} activate  {% endif %}}"> Home</a>
+  <a href="{% url 'about' %}" class="{% if request.resolver_match.url_name == 'about'%} activate  {% endif %}}"> About</a>
+  <a href="{% url 'blog' %}" class="{% if request.resolver_match.url_name == 'blog'%} activate  {% endif %}}">Blog</a>
 </header>

@@ -1,18 +1,21 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Haresco's Page</title>
-    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
-  <link rel="stylesheet" href="{% static 'css/base.css' %}">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blogify</title>
+    <link
+      rel="shortcut icon"
+      href="{% static 'images/blogify.ico' %}"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+  </head>
 
-<body>
-{% include 'app/navbar.html' %}
-{% block content %}
-{% endblock content %}
+  <body>
+    {% include 'app/navbar.html' %} {% block content %} {% endblock content %}
 
-<script src="{% static 'js/base.js' %}"></script>
-</body>
+    <script src="{% static 'js/base.js' %}"></script>
+  </body>
 </html>

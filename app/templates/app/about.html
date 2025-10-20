@@ -1,5 +1,19 @@
 {% extends 'app/base.html' %}
-{ % load static % }
+{% load static %}
 {% block content %}
-<h1>This is About Page!</h1>
+<div class="upper-part">
+    <img src="{% static 'images/studentWriting.jpg' %}" alt="">
+    <div class="text">
+        <h1>Welcome to Blogify — Share Your Story. Inspire the World.</h1>
+        <p>This platform is built for students, by students — a space to share knowledge, express creativity, and
+            document experiences throughout academic life. Whether it’s insights from your latest project, reflections
+            from class, or thoughts about student life, EduBlog helps your voice be heard.
+
+            Our mission is to create a simple yet inspiring community where learning, writing, and technology meet. Each
+            post is a story worth sharing — and every student has something valuable to say.
+            <br>
+            br
+            Write. Share. Inspire.</p>
+    </div>
+</div>
 {% endblock content %}
